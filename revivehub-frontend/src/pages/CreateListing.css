@@ -1,0 +1,255 @@
+.create-main {
+  padding-top: 40px;
+  padding-bottom: 64px;
+}
+.create-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.create-top h1 {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+.create-top p {
+  color: var(--text-2);
+  font-size: 16px;
+}
+.csv-link {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.create-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: flex-start;
+}
+.create-form {
+  flex: 1 1 560px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.create-form .card h2 {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+.card-sub {
+  margin: -14px 0 20px;
+  color: var(--text-2);
+  font-size: 14px;
+}
+.form-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.form-row > .field {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+.price-field {
+  max-width: 320px;
+}
+textarea.input {
+  resize: vertical;
+}
+
+.dropzone {
+  border: 2px dashed var(--field);
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  background: #fafbf9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.dropzone strong span {
+  color: var(--green);
+  text-decoration: underline;
+}
+.dropzone p {
+  font-size: 14px;
+  color: var(--muted);
+}
+.dropzone.dragging {
+  border-color: var(--green);
+  background: var(--green-tint);
+}
+.photo-list {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.photo-list li {
+  position: relative;
+  width: 110px;
+  height: 110px;
+}
+.photo-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+.photo-list button {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--ink);
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+.create-lede {
+  color: var(--text-2);
+  margin-bottom: 16px;
+}
+.small-print {
+  font-size: 13px;
+  margin: 0;
+}
+.create-reject {
+  margin-bottom: 20px;
+}
+.csv-card {
+  margin-top: 32px;
+}
+.csv-card h2 {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+.csv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.csv-cols {
+  margin-bottom: 14px;
+}
+.csv-skipped {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.banner {
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.banner-ok {
+  background: var(--green-tint);
+  color: var(--green-dark);
+}
+.banner-error {
+  background: var(--red-tint);
+  color: var(--red-ink);
+}
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.create-side {
+  flex: 0 1 360px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ai-panel {
+  background: var(--ink);
+  color: #fff;
+  border-radius: 16px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.ai-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ai-title h2 {
+  font-size: 18px;
+}
+.ai-panel > p {
+  color: #d5dce8;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.ai-result {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 18px;
+}
+.ai-result span {
+  display: block;
+  font-size: 13px;
+  color: var(--green-light);
+  font-weight: 700;
+}
+.ai-result strong {
+  font-family: var(--font-head);
+  font-size: 30px;
+}
+.ai-result small {
+  display: block;
+  font-size: 13px;
+  color: #d5dce8;
+  margin-top: 4px;
+}
+.btn-ghost {
+  background: transparent;
+  color: #fff;
+  border-color: #9aa6bc;
+  font-size: 15px;
+  padding: 12px;
+}
+.ai-mock-note {
+  font-size: 12px;
+  color: #aeb8ca;
+}
+.next-card {
+  padding: 22px;
+}
+.next-card h2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.next-card ol {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.8;
+  font-size: 14px;
+  color: var(--text-2);
+}

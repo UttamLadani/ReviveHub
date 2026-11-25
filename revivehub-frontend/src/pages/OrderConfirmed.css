@@ -1,0 +1,140 @@
+.done-main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 40px 64px;
+}
+.done-head {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.done-tick {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--green-tint);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.done-head h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.done-head p {
+  color: var(--text-2);
+  font-size: 16px;
+}
+.done-card {
+  margin-bottom: 20px;
+}
+.done-card h2 {
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.step {
+  flex: 1 1 130px;
+  text-align: center;
+  color: var(--muted);
+}
+.step strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+.step small {
+  font-size: 12px;
+}
+.step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--gray-tint);
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.step.current {
+  color: var(--ink);
+}
+.step.current .step-num {
+  background: var(--green);
+  color: #fff;
+}
+
+.sum-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line-soft);
+  margin-bottom: 18px;
+}
+.sum-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  font-size: 12px;
+  flex: 0 0 auto;
+}
+.sum-item strong {
+  font-size: 16px;
+}
+.sum-item p {
+  font-size: 14px;
+  color: var(--muted);
+}
+.sum-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 15px;
+}
+.sum-lines > div {
+  display: flex;
+  justify-content: space-between;
+}
+.sum-lines span {
+  color: var(--muted);
+}
+.sum-lines .grand {
+  font-size: 17px;
+  border-top: 1px solid var(--line-soft);
+  padding-top: 12px;
+  margin-top: 4px;
+}
+.sum-lines .grand span {
+  color: var(--ink);
+  font-weight: 700;
+}
+.sum-lines .grand strong {
+  font-family: var(--font-head);
+}
+.done-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+@media (max-width: 700px) {
+  .done-main {
+    padding: 32px 20px 48px;
+  }
+}
+
+.done-cancel { margin-bottom: 20px; text-align: center; }
+.done-closed { margin-top: 14px; color: var(--green-dark); font-weight: 700; }
+img.sum-photo { object-fit: cover; border-radius: 10px; }

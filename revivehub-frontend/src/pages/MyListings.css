@@ -1,0 +1,10 @@
+@import './Admin.css';
+.ml-main { padding-top: 40px; padding-bottom: 64px; }
+.ml-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 24px; }
+.ml-top h1 { font-size: 32px; margin-bottom: 6px; }
+.ml-top p { color: var(--text-2); }
+.ml-msg { margin-bottom: 18px; }
+.ml-sub { font-size: 22px; margin: 40px 0 16px; }
+.ml-empty { padding: 28px 22px; color: var(--muted); border-top: 1px solid var(--line-soft); }
+.ml-reject { margin-top: 6px; font-size: 13px; color: var(--red-ink); background: var(--red-tint); padding: 6px 10px; border-radius: 8px; }
+.ml-wait { color: var(--muted); font-size: 14px; }

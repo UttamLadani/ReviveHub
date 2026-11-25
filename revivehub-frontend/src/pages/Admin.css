@@ -1,0 +1,150 @@
+/* Shared by AdminApprovals and AdminReports */
+
+.admin-title {
+  font-size: 30px;
+  margin-bottom: 6px;
+}
+.admin-sub {
+  color: var(--text-2);
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+.admin-note {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.stat-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.stat-row .stat {
+  flex: 1 1 160px;
+}
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.stat {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px;
+}
+.stat span {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+}
+.stat strong {
+  font-family: var(--font-head);
+  font-size: 28px;
+  color: var(--ink);
+}
+.stat strong.green {
+  color: var(--green);
+}
+.stat strong.red {
+  color: var(--red);
+}
+.stat-green {
+  background: var(--green-tint);
+  border-color: #c5e0d5;
+}
+.stat-green span,
+.stat-green strong {
+  color: var(--green-dark);
+}
+
+.table-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.table-title {
+  padding: 18px 22px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.table-title h2 {
+  font-size: 19px;
+}
+.table-title span {
+  font-size: 14px;
+  color: var(--muted);
+}
+.table-head {
+  display: flex;
+  padding: 14px 22px;
+  background: #f0f2ee;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-2);
+  gap: 16px;
+}
+.table-row {
+  display: flex;
+  align-items: center;
+  padding: 18px 22px;
+  border-top: 1px solid var(--line-soft);
+  gap: 16px;
+  font-size: 15px;
+}
+.table-row.small {
+  padding: 16px 22px;
+  font-size: 14px;
+}
+.table-row.small:nth-child(even) {
+  background: #fafbf9;
+}
+.row-meta {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.btn-reject {
+  background: #fff;
+  color: var(--red);
+  border-color: var(--red);
+}
+.btn-reject:hover {
+  background: var(--red-tint);
+}
+.link-btn {
+  background: transparent;
+  border: 0;
+  color: var(--green);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .table-card {
+    overflow-x: auto;
+  }
+  .table-head,
+  .table-row {
+    min-width: 640px;
+  }
+}
